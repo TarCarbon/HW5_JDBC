@@ -5,12 +5,12 @@ public class Database {
 
     private static final String DB_USER = "TestUser";
     private static final String DB_PASSWORD = "12345678";
-    private static final String DB_URL = "  jdbc:h2:/home/carbon/JAVAProject/HW5_JDBC/db/MegaSoft";
+    private static final String DB_URL = "jdbc:h2:/home/carbon/JAVAProject/HW5_JDBC/HW5_JDBC/db/MegaSoft";
     private static final String DB_Driver = "org.h2.Driver";
 
     private Connection connection;
     private static Database instance;
-    public static  Database getInstance(){
+    public static Database getInstance(){
         if (instance == null) {
             instance = new Database();
 

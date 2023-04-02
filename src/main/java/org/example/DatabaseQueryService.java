@@ -1,3 +1,4 @@
+/*
 package org.example;
 
 import model.*;
@@ -73,7 +74,7 @@ public class DatabaseQueryService {
         return youngerEldersWorkers;
     }
 
-    private ResultSet getResult (String query){
+    private static ResultSet getResult(String query){
         try(Statement statement = Database.getInstance().getConnection().createStatement()){
                 ResultSet resultSet = statement.executeQuery(query);
                 statement.close();
@@ -83,3 +84,4 @@ public class DatabaseQueryService {
         }
     }
 }
+*/

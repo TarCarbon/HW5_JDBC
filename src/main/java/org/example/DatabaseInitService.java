@@ -8,7 +8,6 @@ import java.sql.Statement;
 
 public class DatabaseInitService {
     private static final String DB_QUERY_FILE = "sql/init_bd.sql";
-
     public static void main(String[] args) throws SQLException, IOException {
 
         Statement statement = Database.getInstance().getConnection().createStatement();
